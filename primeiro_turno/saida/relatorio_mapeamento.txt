@@ -1,0 +1,34 @@
+Relatorio de mapeamento - Joao Pessoa (zonal x TSE VOTACAO_SECAO)
+============================================================
+Secoes na planilha zonal: 331
+Secoes JP (turno 1) no CSV TSE: 0
+Secoes apos inner join: 0
+Linhas exportadas: 0
+Linhas com LOCAL_DIVERGENTE=True: 0
+
+Validacao eleitores (planilha):
+  Total_eleitores (aba consolidado): 1146330
+  Soma QTD_ELEITORES (aba analitico): 114633
+
+Secoes no Excel sem votacao no CSV (331):
+  zona=1 secao=282
+  zona=1 secao=283
+  zona=1 secao=284
+  zona=1 secao=285
+  zona=1 secao=286
+  zona=1 secao=287
+  zona=1 secao=288
+  zona=1 secao=289
+  zona=1 secao=290
+  zona=1 secao=298
+  zona=1 secao=299
+  zona=1 secao=300
+  zona=1 secao=301
+  zona=1 secao=302
+  zona=1 secao=303
+  zona=1 secao=304
+  zona=1 secao=305
+  zona=1 secao=306
+  zona=1 secao=307
+  zona=1 secao=308
+  ... e mais 311
