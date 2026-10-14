@@ -62,7 +62,7 @@ def main() -> None:
         filtered = filtered[filtered["NM_VOTAVEL"].astype(str).str.contains(busca_nome.strip(), case=False, na=False)]
 
     # --- SESSÃO CONSOLIDADA BASEADA NAS SEÇÕES FILTRADAS ---
-    st.subheader("📊 Estatísticas Consolidadas (Base: Seção Eleitoral)")
+    st.subheader("📊 Estatísticas Consolidadas (Base: Zona Sul)")
 
     total_votos_filtrados = filtered["QT_VOTOS"].sum()
     votos_brancos = filtered[filtered["NR_VOTAVEL"].astype(str) == "95"]["QT_VOTOS"].sum()
