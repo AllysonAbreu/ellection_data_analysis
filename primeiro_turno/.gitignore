@@ -1,6 +1,7 @@
 # Dados brutos locais (grandes); manter CSV mapeado em saida/
 votacao_secao_2026_PB.csv
 dados_primeiro_turno_2026_jp_zonal.xlsx
+votacao_secao_2026_BR.csv
 __pycache__/
 .venv/
 venv/

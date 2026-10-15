@@ -1,12 +1,13 @@
 # Mapeamento votação por seção — João Pessoa (recorte zonal)
 
-Cruzamento entre a planilha zonal de locais de votação (`dados_primeiro_turno_2026_jp_zonal.xlsx`) e o arquivo oficial do TSE `VOTACAO_SECAO` (`votacao_secao_2026_PB.csv`), seguindo o leiaute descrito em `leiame.pdf`.
+Cruzamento entre a planilha zonal de locais de votação (`dados_primeiro_turno_2026_jp_zonal.xlsx`) e os arquivos oficiais do TSE `VOTACAO_SECAO` para a Paraíba (`votacao_secao_2026_PB.csv`) e para o Brasil (`votacao_secao_2026_BR.csv`). Os votos para Presidente são carregados do arquivo BR e associados por zona, local e seção.
 
 ## Pré-requisitos
 
 - Python 3.10+
 - Arquivos de entrada na pasta do projeto (não versionados por padrão por serem grandes):
   - `votacao_secao_2026_PB.csv`
+  - `votacao_secao_2026_BR.csv`
   - `dados_primeiro_turno_2026_jp_zonal.xlsx`
 
 ```bash
@@ -24,7 +25,7 @@ python mapear_votacao_zonal.py
 Opções:
 
 ```bash
-python mapear_votacao_zonal.py --csv votacao_secao_2026_PB.csv --xlsx dados_primeiro_turno_2026_jp_zonal.xlsx --saida saida/
+python mapear_votacao_zonal.py --csv votacao_secao_2026_PB.csv --csv-presidente votacao_secao_2026_BR.csv --xlsx dados_primeiro_turno_2026_jp_zonal.xlsx --saida saida/
 ```
 
 Saídas:
@@ -33,6 +34,8 @@ Saídas:
 |---------|-----------|
 | `saida/votacao_secao_2026_JP_zonal_detalhado.csv` | Linhas TSE (João Pessoa, 1º turno) **somente** para seções presentes na planilha zonal |
 | `saida/relatorio_mapeamento.txt` | Contagens, validação de eleitores e divergências de local |
+
+O CSV detalhado inclui `QT_VOTOS_PRESIDENTE`, soma dos votos para Presidente em cada seção mapeada. Como essa coluna representa um total da seção repetido nas linhas de outros cargos, não some seus valores linha a linha; agregue uma única vez por `NR_ZONA` e `NR_SECAO`.
 
 ### Chave de cruzamento
 
