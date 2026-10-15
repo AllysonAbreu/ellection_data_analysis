@@ -16,7 +16,7 @@ Coloque os arquivos abaixo em `primeiro_turno/`:
 - `votacao_secao_2026_BR.csv`: resultados nacionais, usados para carregar os votos presidenciais.
 - `dados_primeiro_turno_2026_jp_zonal.xlsx`: planilha de locais e seções; o script lê a aba `Analitico_por_escola` e as colunas `COLEGIO`, `BAIRRO`, `SECOES`, `COD_COLEGIO` e `ZONA`.
 
-**Pasta de dados no Google Drive:** aguardando o link da pasta para inserir aqui.
+**Pasta de dados no Google Drive:** [Clique aqui](https://drive.google.com/drive/folders/1mrXqOu5CjXQzZwfTEz-0IBg9V6YeinRB?usp=drive_link).
 
 Os arquivos brutos são grandes e ficam fora do controle de versão. O CSV detalhado gerado pelo projeto é salvo em `primeiro_turno/saida/`.
 
